@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content=" initial-scale=1.0, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/EstiloCoti.css" />
+  <link rel="stylesheet" href="CSS/Header.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="icon" href="Imagenes_index\favicon-16x16.png" type="image/x-icon" />
+  <title>Cotizador online</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo-ps" src="Imagenes_index/Recurso 8.png" alt="Logo Provincia Seguros" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse Botones-header" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link color-secundario" aria-current="page" href="index.html">INICIO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="col-lg-3 tabs">
+      <div class="tabs">
+        <h3 class="tab tab1 active" data-target="contenido1">DATOS DEL VEHÍCULO</h3>
+        <h3 class="tab tab2" data-target="contenido2">COTIZACIÓN</h3>
+        <h3 class="tab tab3" data-target="contenido3">SOLICITUD ONLINE</h3>
+        <h3 class="tab tab4" data-target="contenido4">CONFIRMACIÓN</h3>
+      </div>
+    </div>
+
+
+    <div class="col-lg-9">
+      <div class="content">
+        <!-- PRIMER DIV -->
+        <div id="contenido1" class="tab-content active">
+          <div class="active">
+            <form id="formTab1">
+              <h3>DATOS DEL VEHÍCULO</h3>
+              <ul class="nav nav-tabs">
+                <li class="nav-item text-center">
+                  <div class="container mt-4">
+                    <div class="form-container1">
+                      <div class="zipcode-container">
+                        <input type="number" id="zipe" placeholder="CODIGO POSTAL *">
+                        <div>
+                          <label><b class="kilometro">Cero km:</b></label>
+                          <div class="radio-buttons">
+                            <input class="BotonSi" type="radio" name="km" id="km_si">
+                            <label for="km_si">SI</label>
+                            <input class="BotonSi" type="radio" name="km" id="km_no">
+                            <label for="km_no">NO</label>
+                          </div>
+                        </div>
+                      </div>
+                      </br>
+                      <select id="marca" name="marca" type="text" placeholder="MARCA *">
+                        <option value="">MARCA*</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Peugeot">Peugeot</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                      </select>
+                      <select id="añofabricacion" name="añoFabricacion" type="number"
+                        placeholder="AÑO DE FABRICACION *">
+                        <option value="">AÑO DE FABRICACIÓN *</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2001">2002</option>
+                        <option value="2001">2003</option>
+                        <option value="2001">2004</option>
+                        <option value="2001">2005</option>
+                        <option value="2001">2006</option>
+                        <option value="2001">2007</option>
+                        <option value="2001">2008</option>
+                        <option value="2001">2009</option>
+                        <option value="2001">2010</option>
+                        <option value="2001">2011</option>
+                        <option value="2001">2012</option>
+
+                      </select>
+                      <select id="modelo" name="modelo" type="text" placeholder="MODELO *">
+                        <option value="">MODELO *</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Coupe">Coupe</option>
+                      </select>
+                      <div class="form-accesorie-tab1">
+                        <select id="accesorio" name="accesorio" type="text" placeholder="ACCESORIOS *">
+                          <option>ACCESORIOS</option>
+                          <option value="Tubo GNC">Tubo GNC</option>
+                          <option value="Levanta vidrios Eléctrico"> Levanta vidrios Eléctrico </option>
+                        </select>
+                        <i class="bi bi-info-circle"></i>
+                      </div>
+                      <input type="email" name="email" id="email" placeholder="(1) EMAIL *">
+                      <input type="number" name="telefono" id="telefono" placeholder="(1)(CÓD.ÁREA) TELÉFONO *">
+                      <img class="captcha" src="Imagenes_index/Captura de pantalla 2023-11-09 130215.png" alt="captcha">
+                    </div>
+                    <div class="form-text">
+                      <p><b class="color-primary">*</b> Estos Datos son obligatorios</p>
+                      <p><b class="color-primary">(1)</b> La información que otorgo en virtud de la presente operación
+                        informática, implica la prestación del consentimiento o dispuesto por la ley 25.326. Conozco
+                        que
+                        podré
+                        ejercer los derechos de acceso, rectificación y supresión de datos y acepto que la información
+                        que
+                        otorgo podrá ser utilizada para acciones de marketing en forma directa o a través de terceros.
+                      </p>
+                    </div>
+                    <button id="formularioCompletado">Cotizar</button>
+                  </div>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+
+        <!--/*SEGUNDO DIV*/ -->
+        <div id="contenido2" class="tab-content fluid">
+          <div id="datosVehiculoContainer"></div>
+          <div id="content-tab2" class="tab-item">
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th class="benefit"></th>
+                  <th class="plan-name">Terceros Ahorro</th>
+                  <th class="plan-name">Terceros Básico</th>
+                  <th class="plan-name">Terceros Completos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="benefit">Robo/Inc Parcial S/Fcia</td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                </tr>
+                <tr>
+                  <td class="benefit">Daño Total por Accidente</td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                </tr>
+                <tr>
+                  <td class="benefit">Robo Hurto/Incendio Total</td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                </tr>
+                <tr>
+                  <td class="benefit">Auto Sustituto 5 días</td>
+                  <td class="check"></td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                </tr>
+                <tr>
+                  <td class="benefit">Daño Parcial por Robo Total</td>
+                  <td class="check"></td>
+                  <td class="check"></td>
+                  <td class="check">&#10003;</td>
+                </tr>
+                <tr>
+                  <td class="benefit">Cubierta/llanta hasta 1</td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                </tr>
+                <tr>
+                  <td class="benefit">Responsabilidad Civil</td>
+                  <td class="check"></td>
+                  <td class="check">&#10003;</td>
+                  <td class="check">&#10003;</td>
+                </tr>
+                <tr>
+                  <td class="plan-name">Precio</td>
+                  <td class="price">$20.000/mes</td>
+                  <td class="price">$25.000/mes</td>
+                  <td class="price">$30.000/mes</td>
+                </tr>
+                <tr>
+                  <td class="plan-name">Contratar</td>
+                  <td><a class="contratar" href="#">Contratar</a></td>
+                  <td><a class="contratar" href="#">Contratar</a></td>
+                  <td><a class="contratar" href="#">Contratar</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button id="Volver_Atras1">Anterior</button>
+        </div>
+        <!-- TERCER DIV -->
+        <div id="contenido3" class="tab-content">
+          <form action="#" class="form">
+            <div class="form-section">
+              <h3 class="form-title">Datos Personales</h3>
+              <div class="form-container3">
+                <input type="text" placeholder="NOMBRE *">
+                <input type="text" placeholder="APELLIDO *">
+                <input type="number" placeholder="NUMERO DE DOCUMENTO (DNI)*">
+                <div class="form-input">
+                  <label class="color-primary"><b>FECHA DE NACIMIENTO</b></label>
+                  <input type="text" placeholder="DD/MM/AAAA*">
+                </div>
+                <select>
+                  <option value="">SEXO*</option>
+                </select>
+                <select name="" id="">
+                  <option value="">ESTADO CIVIL*</option>
+                </select>
+                <select name="" id="">
+                  <option value="">NACIONALIDAD*</option>
+                </select>
+                <select name="" id="">
+                  <option value="">PROFESION*</option>
+                </select>
+                <div class="form-input Email">
+                  <input type="email" name="" id="Email1" placeholder="correo@correo.com"><span
+                    class="info-icon2">ℹ</span>
+                </div>
+                <div class="form-input Celular">
+                  <label class="celular0"><b>CELULAR 0</b></label>
+                  <input type="tel" placeholder="COD. AREA">
+                  <label class="label-15"><b>15</b></label>
+                  <input type="tel" placeholder="TELEFONO">
+                </div>
+                <div class="form-input Telefono">
+                  <label><b>TELEFONO</b></label>
+                  <input type="tel" placeholder="11">
+                  <input type="tel" placeholder="55556666">
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <span for="ppe" class="persopolitica"><b>¿SOS UNA PERSONA<br>POLITICAMENTE EXPUESTA?</b></span>
+              <input type="radio" name="km" id="si-radio"><label for="si-radio">SI</label>
+              <input type="radio" name="km" id="no-radio"><label for="no-radio">NO</label>
+            </div>
+            <div class="form-section">
+              <h3 class="form-title">Domicilio</h3>
+              <div class="form-container">
+                <input type="text" placeholder="CÓDIGO POSTAL*">
+                <input type="text" placeholder="CALLE*">
+                <input type="text" placeholder="NUMERO*">
+                <input type="text" placeholder="PROVINCIA*">
+                <input type="text" placeholder="LOCALIDAD*">
+                <input type="text" placeholder="PISO">
+                <input type="text" placeholder="DEPARTAMENTO">
+                <input type="text" placeholder="UNIDAD">
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-title">Datos del vehículo</h3>
+              <div class="form-container">
+                <input type="text" placeholder="PATENTE*">
+                <input type="text" placeholder="NUMERO DE MOTOR*">
+                <input type="text" placeholder="NUMERO DE CHASIS*">
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-title">Datos de inspección</h3>
+              <div class="form-container Celular1">
+                <div class="form-input ">
+                  <label class="celular0"><b>CELULAR 0</b></label>
+                  <input type="tel" placeholder="COD. AREA">
+                  <label class="label-15"><b>15</b></label>
+                  <input type="tel" placeholder="TELEFONO*"><span class="info-icon1">ℹ</span>
+                </div>
+                <div class="form-input">
+                  <input type="email" placeholder="(1)EMAIL DE INSPECCION*"><span class="info-icon">ℹ</span>
+                </div>
+              </div>
+              <small class="form-aclaracion">Ingresá tu número telefónico incluyendo tu código de área.</small>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-title">Forma de pago</h3>
+              <div class="form-container">
+                <select>
+                  <option value="">¿COMO QUERES PAGAR?*</option>
+                  <option value="Efectivo">Efectivo</option>
+                  <option value="Debito">Debito</option>
+                  <option value="Credito">Credito</option>
+                  <option value="Transferencia">Transferencia</option>
+                </select>
+              </div>
+              <small class="form-aclaracion">*Estos Datos son obligatorios</small>
+            </div>
+            <div id="ConjuntoBotones">
+              <button id="Volver_Atras2">Anterior</button>
+              <button id="submitForm3">Continuar</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- CUARTO DIV -->
+        <!--FLIP CARD-->
+        <div id="contenido4" class="tab-content">
+          <div class="row d-flex">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="card border-0">
+                <div class="card__side card__side--front-1">
+                  <div class="card__title card__title--1">
+                    <i class="fas fa-paper-plane"></i>
+                    <h4 class="card__heading">PLAN SELECCIONADO</h4>
+                  </div>
+
+                  <div class="card__details">
+                    <ul>
+                      <li>Robo/Inc Parcial S/Fcia</li>
+                      <li>Daño Total por Accidente</li>
+                      <li>Robo Hurto/Incendio Total</li>
+                      <li>Auto Sustituto 5 días</li>
+                      <li>Cubierta/llanta hasta 1</li>
+                      <li>Responsabilidad Civil</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card__side card__side--back card__side--back-1">
+                  <div class="card__cta">
+                    <div class="card__price-box">
+                      <h4 class="card__heading__Inspeccion">DATOS DE INSPECCION</h4>
+                    </div>
+                    <ul>
+                      <div class="card__details">
+                        <li>Nombre:Juan Carlos</li>
+                        <li>Apellido:DOE XXXXXX</li>
+                        <li>Modelo:Ford Taurus</li>
+                        <li>Accesorios: Tubo GNC</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row d-flex flex-md-row-reverse">
+            <div class="col-12 col-md-6">
+              <div class="text-container">
+                <p class="texto-final">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                  incididunt ut labore et
+                  dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea
+                  commodo
+                  consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut
+                  labore
+                  et
+                  dolore
+                  magna aliqua.</p>
+                <button class="btn btn-secondary" id="Volver_Atras3">Anterior</button>
+                <button class="btn btn-secondary" id="Finalizar">Finalizar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto&family=Ropa+Sans&display=swap"
+    rel="stylesheet" />
+  <script src="JavaScript/CotiJavaS.js"></script>
+</body>
+
+</html>

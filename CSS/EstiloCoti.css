@@ -1,0 +1,770 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:opsz@6..12&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto&family=Ropa+Sans&display=swap");
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  background-color: #edf3fc;
+}
+html {
+  background-color: #edf3fc;
+}
+/* TABS */
+#contenido1 {
+  margin: auto;
+  text-align: center;
+}
+
+.content {
+  text-align: left; /* Para evitar que el texto dentro de contenido1 también se centre */
+}
+.container {
+  display: flex;
+  background-color: #edf3fc;
+  font-size: 1em;
+  padding: 2.5em 0 1em 0;
+  margin: 0;
+  grid-template-columns: 25% 75%;
+}
+.col-lg-3 {
+  display: flex;
+}
+.col-lg-3 .tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #edf3fc;
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+
+.tab {
+  white-space: nowrap; /* Evita que el texto se ajuste automáticamente */
+  margin: 0.5em; /* Espaciado entre las pestañas */
+}
+
+.tab1,
+.tab3 {
+  flex: 0 0 auto; /* No se expanden ni se contraen */
+}
+
+.tab2,
+.tab4 {
+  flex: 1; /* Se expanden */
+}
+
+.tabs {
+  margin-top: 2em;
+  flex-wrap: nowrap; /* Permitir el ajuste de líneas */
+}
+h3 {
+  height: 33.33%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.tab-content {
+  background-color: #edf3fc;
+  margin: 0;
+}
+.tab-content2 {
+  background-color: #edf3fc;
+  padding: 1em 1em;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+.tab-content h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Nunito";
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  color: #042161;
+  font-weight: bold;
+}
+.tab-content h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-family: "Nunito";
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  color: #edf3fc;
+  font-weight: bold;
+}
+.tab-content p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #384f80;
+  margin-top: 15px;
+}
+.tab-content .active {
+  display: flex;
+  flex-direction: column;
+}
+.tab-content .active div {
+  display: contents !important;
+  width: 100%;
+  height: 100%;
+}
+.tab-content .active .container {
+  margin-top: 20px;
+}
+.tab-content .active .form-group {
+  margin-bottom: 15px;
+}
+.tabs .tab1.active {
+  background-color: #006aa3;
+  width: 100px;
+}
+.tabs .tab2.active {
+  background-color: #28767b;
+  width: 100px;
+}
+.tabs .tab3.active {
+  background-color: #6e1bba;
+  width: 100px;
+}
+.tabs .tab4.active {
+  background-color: #b03088;
+  width: 100px;
+}
+.tabs h3:not(.active):hover {
+  background-color: #ccc;
+  color: #f1f3f9;
+}
+.tabs h3.active {
+  background-color: #edf3fc;
+  color: #f1f3f9;
+}
+.tabs h3 {
+  height: 33.33%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px;
+}
+.tabs .tab:not(.active):hover {
+  background-color: #ccc;
+  color: #f1f3f9;
+}
+.tabs .tab:not(.active) {
+  background-color: #edf3fc;
+  color: #000000;
+}
+.tabs .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.tabs .nav-item.active {
+  background-color: #edf3fc;
+  color: #f1f3f9;
+}
+.tabs .nav-item:not(.active) {
+  background-color: #edf3fc;
+  color: #000000;
+}
+.tabs .nav-item:not(.active):hover {
+  background-color: #edf3fc;
+  color: #f1f3f9;
+}
+.nav-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.Bienvenida {
+  display: contents;
+}
+
+/* FORMULARIO */
+/* Contenedor principal del formulario */
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 32.33%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.form-accesorie-tab1 {
+  width: 33%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.form-accesorie-tab1 select {
+  width: calc(33% - 20px);
+}
+.form-accesorie-tab1 i {
+  position: static;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.captcha {
+  width: 14em;
+  display: flex;
+}
+#contenido3 input:nth-child(3n),
+#contenido3 select:nth-child(3n) {
+  margin-right: 0;
+}
+#contenido3 select {
+  width: calc(100% - 0px);
+  margin-right: 0;
+}
+#contenido3 select:nth-child(2n) {
+  margin-right: 20px;
+}
+#formularioCompletado {
+  background-color: rgba(13, 110, 253, 0.25);
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 10em;
+  border-radius: 5%;
+  height: 3em;
+}
+.active {
+  width: 100%;
+}
+.zipcode-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.zipcode-container .kilometro {
+  margin-left: 5em;
+  font-size: 1.2em;
+  margin-top: 3px;
+}
+
+.zipcode-container .radio-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.zipcode-container .radio-buttons label {
+  font-size: 1.2em; /* Ajusta el tamaño del texto de los botones de radio */
+}
+/* PRICING TABLE */
+.pricing-table {
+  margin: 1em;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  font-family: "Nunito";
+}
+.pricing-table th,
+.pricing-table td {
+  padding: 20px;
+  text-align: center;
+}
+.pricing-table th {
+  background-color: #3f5bb0;
+  color: #f5f2f4;
+  font-size: 1em;
+}
+.pricing-table td {
+  background-color: #f1f3f9;
+}
+.pricing-table .benefit {
+  font-size: 0.9em;
+}
+.pricing-table .plan-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.pricing-table .contratar {
+  font-family: "Nunito";
+  color: #c90c22;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.pricing-table .price {
+  font-size: 1.2em;
+  color: #0e6773;
+  font-weight: 700;
+}
+.pricing-table .check {
+  text-align: center;
+  color: #4b955f;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+/*DATOS TOMADOS TAB1*/
+.tab2-title {
+  color: #f1f3f9;
+  font-size: 20px;
+}
+#datosVehiculoContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tab2-paragraph {
+  margin: 5px;
+  padding: 10px;
+}
+#Volver_Atras1 {
+  background-color: rgba(13, 110, 253, 0.25);
+  display: block;
+  margin: 20px 235px 20px;
+  width: 10em;
+  border-radius: 5%;
+  height: 3em;
+}
+
+/*SOLICITUD ONLINE*/
+.BotonSi {
+  height: 15px;
+  width: 15px;
+}
+.form {
+  border-radius: 5px;
+  padding: 0em 2em 2em 2em;
+  color: #042161;
+  font-family: "Nunito";
+}
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+.form-section {
+  text-align: left;
+  margin: 0 0 1em 0;
+}
+.form-section label {
+  display: inline-block; /* Cambia a inline-block para permitir que los elementos estén en la misma línea */
+  margin-bottom: 5px;
+}
+.form-section input {
+  margin-bottom: 5px;
+  vertical-align: middle; /* Alinea verticalmente los elementos de entrada con el texto del label */
+}
+.form-container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5em;
+  align-items: center;
+  font-size: 0.8em;
+}
+.form-input {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.form-container1 input,
+.form-container1 select {
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  color: #5b5a5a;
+  font-family: "Ropa Sans";
+}
+.form label {
+  margin: 0em 1em 1em 0em;
+}
+.form label.label-15 {
+  margin: 0em 1em 1em 1em;
+}
+.form label.celular0 {
+  white-space: nowrap;
+  margin: 0em 1em 1em 0em;
+}
+.info-icon1 {
+  cursor: pointer;
+  background-color: #042161;
+  color: #f1f3f0;
+  border-radius: 50%;
+  width: 1em;
+  height: 0.938em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin: -1em 0em 0em 0.4em;
+}
+.info-icon {
+  cursor: pointer;
+  background-color: #042161;
+  color: #f1f3f9;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin: -1em 0em 0em 0.4em;
+}
+.info-icon2 {
+  cursor: pointer;
+  background-color: #042161;
+  color: #f1f3f9;
+  border-radius: 50%;
+  width: 2em;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin: -1em 0em 0em 0.4em;
+}
+.form-section input[type="radio"] {
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 20px; /* Ajusta el tamaño del círculo externo */
+  height: 20px; /* Ajusta el tamaño del círculo externo */
+  position: relative;
+  background-color: white; /* Hacemos el fondo transparente */
+  margin-right: 5px;
+  appearance: none; /* Elimina el estilo por defecto del círculo interno */
+}
+.form-section input[type="radio"]:checked::before {
+  background-color: #042161; /* Cambia el color según tus preferencias */
+  width: 7px; /* Ajusta el tamaño del círculo interno */
+  height: 7px; /* Ajusta el tamaño del círculo interno */
+}
+.form-section input[type="radio"]::before {
+  /* Ajusta el tamaño del círculo interno según sea necesario */
+  width: 7px; /* La mitad del tamaño del círculo externo */
+  height: 7px; /* La mitad del tamaño del círculo externo */
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent; /* Hacemos el fondo transparente */
+}
+.form-container3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5em;
+  align-items: center;
+  font-size: 0.8em;
+}
+.form-container3 .Email {
+  width: 15em !important;
+}
+.form-container3 input {
+  width: calc(100% - -6em);
+}
+.form-container3 select {
+  width: 100px;
+}
+.form-container3 input[type="text"] {
+  width: calc(100%);
+}
+.form-container3 input[type="number"] {
+  width: calc(100% - -5em);
+}
+.form-container3 input[type="text"][placeholder="DD/MM/AAAA*"],
+.form-container3 select {
+  width: calc(70%);
+}
+.form-container3.Email input[type="email"] {
+  width: calc(100% - 1em);
+}
+.form-container3.Celular input[type="tel"],
+.form-container3.Telefono input[type="tel"] {
+  width: calc(50% - 0.6em);
+}
+.form-container3.Telefono input[type="tel"][placeholder="11"] {
+  margin-right: 1.5em;
+}
+.Celular1 .form-input input[type="tel"],
+.Celular1 .form-input input[type="email"] {
+  width: 15em;
+}
+.Celular1 .form-input input[type="tel"][placeholder="COD. AREA"],
+.Celular1 .form-input input[type="tel"][placeholder="TELEFONO*"] {
+  width: 110px;
+}
+.form-section label {
+  display: block;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container select,
+.form-container .captcha {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.form-accesorie {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.form-accesorie select {
+  width: calc(100% - 20px);
+}
+.form-accesorie i {
+  position: static;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.form-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Nunito";
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  color: #f1f3f9;
+  font-weight: bold;
+}
+#ConjuntoBotones {
+  display: flex;
+  justify-content: center;
+}
+#ConjuntoBotones button {
+  margin: 0 10px; /* Ajusta este valor según sea necesario para el espacio entre botones */
+}
+#Volver_Atras2 {
+  background-color: rgba(13, 110, 253, 0.25);
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 10em;
+  border-radius: 5%;
+  height: 3em;
+}
+#submitForm3 {
+  background-color: rgba(13, 110, 253, 0.25);
+  width: 9em;
+  border-radius: 5%;
+}
+/*FLIP CARD*/
+.section-plans {
+  background-color: #091c48;
+  padding: 4rem 0 4rem 0;
+}
+.card {
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  border: none;
+}
+.card__side {
+  height: 30rem;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.card__side--back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  border-radius: 2%;
+}
+.card__side--back-1 {
+  background: linear-gradient(180deg, #284ea1 0%, #b254de 50%, #f6d6ff 100%);
+  border-radius: 2%;
+}
+.card:hover .card__side--back {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+.card__side--front {
+  background-color: #edf3fc;
+  border-radius: 2%;
+}
+.card__side--front-1 {
+  background: linear-gradient(180deg, #284ea1 0%, #b254de 50%, #f6d6ff 100%);
+  border-radius: 2%;
+}
+.card:hover .card__side--front-1 {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.card__title {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.card__title--1 .fas {
+  font-size: 5rem;
+}
+.card__heading {
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f5f2f4;
+  width: 75%;
+}
+.card__cta .card__heading__Inspeccion {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-family: "Nunito";
+  margin-top: 3em;
+  color: #edf3fc;
+  font-weight: bold;
+}
+
+.card__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.card__details {
+  padding: 0 2rem 2rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.1rem;
+  list-style: none;
+}
+.card__cta {
+  position: absolute;
+  top: 30%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  color: #f5f2f4;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contenido4 {
+  margin-left: 10px;
+}
+#Volver_Atras3 {
+  width: 9em;
+  border-radius: 5%;
+  height: 3em;
+}
+#Finalizar {
+  width: 9em;
+  border-radius: 5%;
+  height: 3em;
+  gap: 20px;
+}
+/* FOOTER*/
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 100%;
+  }
+}
+/*MEDIA QUERIES 3° TAB*/
+@media screen and (max-width: 570px) {
+  .contenido3 .form-container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos del formulario */
+  }
+
+  .contenido3 .form-input.Celular,
+  .contenido3 .form-input.Telefono {
+    flex-direction: column;
+  }
+
+  .contenido3 .form-section {
+    margin-bottom: 20px; /* Espacio entre secciones del formulario */
+  }
+
+  .contenido3 .tab-content {
+    width: 100vw; /* Ancho total de la pantalla */
+    margin-left: -20px; /* Compensar el espacio extra a la izquierda */
+    overflow-x: hidden; /* Ocultar barras de desplazamiento horizontal */
+  }
+}
+
+/* Ajuste específico para tamaños de pantalla medianos */
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 100%;
+  }
+}
+/*MEDIA QUERIES 4°TAB*/
+@media screen and (max-width: 570px) {
+  .row.d-flex.flex-md-row-reverse {
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative; /* Añade posición relativa al contenedor padre */
+  }
+  .text-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    position: relative; /* Añade posición relativa al texto */
+    top: 29em;
+  }
+}

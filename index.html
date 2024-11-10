@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto&family=Ropa+Sans&display=swap"
+    rel="stylesheet" />
+  <title>Cotizador online</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo-ps" src="Imagenes_index/Recurso 8.png"
+            alt="Logo Provincia Seguros" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse Botones-header" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link color-secundario" aria-current="page" href="cotizador.html">COTIZÁ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quienesomos">¿QUIENES SOMOS?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">CONTACTANOS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="Contenedor-carrusel">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Imagenes_index/Fotos-carrusel/slider auto.png" class="d-block w-100 imagenes-carrusel" alt="..." />
+          <div class="carousel-caption Titulo1">
+            <h3>Seguro Automotor</h3>
+            <p>Auto Sustituto 5 días</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes_index/Fotos-carrusel/slider moto.png" class="d-block w-100 imagenes-carrusel" alt="..." />
+          <div class="carousel-caption Titulo2">
+            <h3>Seguro Motovehiculo</h3>
+            <p>La tasa mas baja del mercado</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes_index/Fotos-carrusel/slider hogar.png" class="d-block w-100 imagenes-carrusel" alt="..." />
+          <div class="carousel-caption Titulo3">
+            <h3>Seguro de vivienda</h3>
+            <p>Asegurá contra todo riesgo</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes_index/Fotos-carrusel/slider acc personales.png" class="d-block w-100 imagenes-carrusel"
+            alt="..." />
+          <div class="carousel-caption Titulo4">
+            <h3>Seguro de vida</h3>
+            <p>La mejor cobertura al menor precio</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="TituloCotizador">
+    <h1>Consultá Nuestas ofertas</h1>
+    <h2>Elegí el seguro que estás buscando</h2>
+    <div class="contenedor-cards d-flex justify-content-around Contenedor-Tarjetas">
+      <!-- Tarjeta 1 -->
+      <div class="card">
+        <a href="cotizador.html" class="btn btn-img d-flex align-items-center Borde-Tarjetas">
+          <img src="Imagenes_index/Imagenes-cards/auto tilde degradado.png" class="card-img-top Imagen-card"
+            alt="..." />
+        </a>
+        <div class="card-body" id="cotizár">
+          <h5 class="card-title">Cotizá tu Auto</h5>
+        </div>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="card">
+        <a href="cotizador.html" class="btn btn-img d-flex align-items-center Borde-Tarjetas">
+          <img src="Imagenes_index/Imagenes-cards/moto vespa degradado.png" class="card-img-top Imagen-card"
+            alt="..." />
+        </a>
+        <div class="card-body" id="cotizár">
+          <h5 class="card-title">Cotizá tu Moto</h5>
+        </div>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="card">
+        <a href="cotizador.html" class="btn btn-img d-flex align-items-center Borde-Tarjetas">
+          <img src="Imagenes_index/Imagenes-cards/casa 2 ventanas.png" class="card-img-top Imagen-card" alt="..." />
+        </a>
+        <div class="card-body" id="cotizár">
+          <h5 class="card-title">Cotizá tu Casa</h5>
+        </div>
+      </div>
+      <!-- Tarjeta 4 -->
+      <div class="card">
+        <a href="cotizador.html" class="btn btn-img d-flex align-items-center Borde-Tarjetas">
+          <img src="Imagenes_index/Imagenes-cards/usuario fondo degradado.png" class="card-img-top Imagen-card"
+            alt="..." />
+        </a>
+        <div class="card-body" id="cotizár">
+          <h5 class="card-title">Accidentes Personales</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contenedor_Info">
+    <div class="half">
+      <img class="image" src="Imagenes_index/Fondo cotizador.jpg" alt="Imagen" />
+    </div>
+    <div class="half text" id="quienesomos">
+      <h1>¿Quienes Somos?</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro et
+        minus, aut recusandae perspiciatis perferendis amet temporibus
+        voluptatibus ipsum laborum eaque culpa voluptas ab quaerat nostrum
+        iusto quis possimus maiores! Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <footer class="container-fluid Contenedor-Redes" id="contacto">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="p-4 rounded mb-4 bg-custom">
+          <h2 class="text-white">Nuestras redes oficiales</h2>
+          <section class="BotonesSociales">
+            <a href="#" class="btn btn-primary bi bi-facebook"></a>
+            <a href="#" class="btn btn-info bi bi-twitter"></a>
+            <a href="#" class="btn btn-danger bi bi-instagram"></a>
+          </section>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-4 rounded mb-4 bg-custom">
+          <div class="contact-info mb-2">
+            <p class="mb-0"><i class="bi bi-telephone-fill"></i> Teléfono: +123456789</p>
+          </div>
+          <div class="contact-info mb-2">
+            <p class="mb-0"><i class="bi bi-envelope-at-fill"></i> Correo electrónico: info@example.com</p>
+          </div>
+          <div class="contact-info">
+            <p class="mb-0"><i class="bi bi-geo-alt-fill"></i> Domicilio: Calle Ejemplo #123, Ciudad, País</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

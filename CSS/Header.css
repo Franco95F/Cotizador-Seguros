@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:opsz@6..12&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto&family=Ropa+Sans&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif; /* Establece la fuente predeterminada */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+  color: #f5f2f4;
+  font-size: small;
+}
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+}
+.logo-ps {
+  height: 40px;
+}
+
+.navbar {
+  background-color: #203d7c;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .Botones-header {
+  justify-content: center;
+}
+.navbar-expand-lg .navbar-collapse {
+  display: contents;
+}
+.color-primario {
+  color: #203d7c;
+}
+
+.color-secundario {
+  color: #f5f2f4;
+}
+
+.bg-primario {
+  background-color: #203d7c;
+}
+.bg-secundario {
+  background-color: #f5f2f4;
+}
+
+.text-banner {
+  top: 40%;
+  left: 5%;
+  width: 19%;
+}
+
+.btn-banner {
+  bottom: 20%;
+  right: 20%;
+}
+
+.btn-banner button {
+  width: 200px;
+  height: 50px;
+  background-color: #203d7c;
+}
+
+.nav-link {
+  white-space: nowrap;
+}
